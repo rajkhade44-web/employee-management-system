@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ems-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/ems
+    password: ${DATABASE_PASSWORD}
+    username: ${DATABASE_USER}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
