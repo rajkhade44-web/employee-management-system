@@ -26,7 +26,7 @@ import lombok.Setter;
 @Builder
 @Entity
 @Table(name = "leave_requests")
-public class LeaveRequest {
+public class LeaveRequest extends BaseEntity {
     @Enumerated(EnumType.STRING)
     @Column(name = "leave_type", nullable = false)
     private LeaveType leaveType;
