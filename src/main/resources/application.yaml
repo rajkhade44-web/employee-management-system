@@ -10,3 +10,15 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+app:
+  jwt:
+    secret: ${JWT_SECRET}
+    issuer: my-secure-app
+    access-token-life-cycle-seconds: 3600
+    refresh-token-ttl-seconds: 604800
+    refresh-cookie-name: refresh_token
+    cookie-http-only: true
+    cookie-secure: false
+    cookie-same-site: lax
+    cookie-domain-name: ""
